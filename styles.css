@@ -1,0 +1,148 @@
+body {
+    background-color: #492088;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #492088;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #6c1dd0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #bd4de5;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #ff19db;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(85px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+/* Button Styles */
+button {
+    /* Background color for buttons */
+    background-color: #bd4de5; 
+    /* Text color for buttons */
+    color: white; 
+    /* Remove default border */
+    border: none; 
+    /* Add padding to buttons */
+    padding: 10px 15px; 
+    /* Add border radius */
+    border-radius: 5px; 
+    /* Set cursor to pointer */
+    cursor: pointer; 
+    /* Add transition effect */
+    transition: background-color 0.3s, box-shadow 0.3s; 
+    /* Add margin */
+    margin: 5px; 
+    /* Set font size */
+    font-size: 16px; 
+    /* Add shadow to buttons */
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2); 
+    /* Position relative for pseudo-elements */
+    position: relative; 
+}
+
+/* Button Hover Styles */
+button:hover {
+    /* Background color for buttons on hover */
+    background-color: #ff19db; 
+}
+
+/* Glow Effect for Clicked Button */
+button:active {
+    /* Increase box shadow to create glow effect */
+    box-shadow: 0px 2px 8px rgba(255, 25, 219, 0.5); 
+    outline: none;
+}
+/* Button Icon Styles */
+button i {
+    /* Margin right for icons */
+    margin-right: 5px; 
+}
+
+/* Add styles for temperature display */
+#temperatureDisplay {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin: 10px
+}
+
+/* Add styles for song name display */
+#songName {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff; /* Set color to white */
+}
